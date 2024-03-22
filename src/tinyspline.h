@@ -138,7 +138,7 @@ extern int TS_VERSION_PATCH;
  *
  *     TS_MAX_NUM_KNOTS = 1 / TS_KNOTS_EPSILON
  */
-#define TS_MAX_NUM_KNOTS 10000
+#define TS_MAX_NUM_KNOTS 30
 
 /**
  * The minimum of the domain of newly created splines. Must be less than
@@ -173,7 +173,7 @@ extern int TS_VERSION_PATCH;
  * ::TS_KNOT_EPSILON. This is in particular recommended when ::TS_KNOT_EPSILON
  * and ::TS_MAX_NUM_KNOTS are related to each other as described above.
  */
-#define TS_KNOT_EPSILON 1e-4f
+#define TS_KNOT_EPSILON 3e-7f
 
 /**
  * If the distance between two (control) points is less than or equal to this
